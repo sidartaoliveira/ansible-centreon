@@ -20,5 +20,6 @@
   notify:
     - restart httpd
 
-- name: Disable centstorage
-  action: service name=centstorage state=stopped enabled=false
+# FIXME
+#- name: Disable centstorage
+#  action: service name=centstorage state=stopped enabled=false

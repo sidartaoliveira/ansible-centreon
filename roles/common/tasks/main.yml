@@ -13,8 +13,9 @@
 - name: ensure SELinux is turned off
   action: command /usr/sbin/setenforce 0
 
-- name: Disable iptables
-  action: service name=iptables state=stopped enabled=false
+# FIXME
+#- name: Disable iptables
+#  action: service name=iptables state=stopped enabled=false
 
 - name: Install ntp
   yum: name=ntp state=present

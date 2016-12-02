@@ -2,7 +2,7 @@
 # This playbook deploys the whole application stack in this site.
 
 - name: Central
-  hosts: central
+  hosts: all
   remote_user: root
 
   roles:
@@ -10,7 +10,7 @@
     - central
 
 - name: Poller
-  hosts: poller
+  hosts: all
   remote_user: root
 
   roles:
@@ -18,7 +18,7 @@
     - poller
 
 - name: Db
-  hosts: db
+  hosts: all
   remote_user: root
 
   roles:
